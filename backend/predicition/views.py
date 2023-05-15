@@ -77,7 +77,7 @@ class RegistrationView(APIView):
     def post(self,request):
         data = request.data
         print("akash",data)
-        return Response({"msg":"success"},status=status.HTTP_200_OK)
+        # return Response({"msg":"success"},status=status.HTTP_200_OK)
         form = RegisterSerializer(data=data)
         if form.is_valid():
             name = data['name']
